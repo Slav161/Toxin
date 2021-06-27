@@ -1,0 +1,15 @@
+.m-container{
+    width: 100%;
+    background-image: url(/img/bg/image3.jpg);
+    border: 1px black solid;
+    .main-class{
+        padding: 50px 10px;
+        border: 1px black solid;
+        height: 100%;
+    }
+    .devi{
+        width: 18px;
+        height: 6px;
+        border: 1px black solid;  
+    }
+}
