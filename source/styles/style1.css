@@ -1,9 +1,9 @@
+/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
-
 *,
 *:before,
 *:after {
@@ -11,24 +11,20 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 :focus,
 :active {
   outline: none;
 }
-
 a:focus,
 a:active {
   outline: none;
 }
-
 nav,
 footer,
 header,
 aside {
   display: block;
 }
-
 html,
 body {
   height: 100%;
@@ -40,43 +36,34 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
 input,
 button,
 textarea {
   font-family: inherit;
 }
-
 input::-ms-clear {
   display: none;
 }
-
 button {
   cursor: pointer;
 }
-
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
 a,
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 ul li {
   list-style: none;
 }
-
 img {
   vertical-align: top;
 }
-
 h1,
 h2,
 h3,
@@ -86,61 +73,34 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+/*--------------------*/
 
-/*--------------------*/
-/*------null-end------*/
-/*--------------------*/
 body * {
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Montserrat, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(31, 32, 65, 0.75);
 }
-body .container {
+
+.h-container,
+.f-container {
+  width: 100%;
+  box-shadow: 0 0 15px rgba(140, 164, 250, 0.2);
+}
+
+.container {
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
 }
 
-button {
-  border-radius: 22px;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  font-weight: 700;
-  padding: 3px;
-  background: linear-gradient(to top, #8ba4f9 0%, #bc9cff 50%);
-  height: 44px;
-}
-button div {
-  font-size: 12px;
-}
-button:active {
-  background: linear-gradient(to top, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 50%);
-}
-button .log-button {
-  background: #fff;
-  padding: 7px 22px;
-  color: #bc9cff;
-  border-radius: 22px;
-  /*  stroke: linear-gradient(to top, rgb(140, 164, 250) 0%, #BC9CFF 50%);
-        stroke-width: 2px; */
-}
-button .all-button {
-  color: #fff;
-  padding: 2px 21px;
-}
-
-.h-container {
-  width: 100%;
-  box-shadow: 0 0 15px rgba(140, 164, 250, 0.2);
-}
-.h-container .header-class {
+.header-class {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-
 /* .header-class__navbar{
     display: inline-flex;
 }
@@ -151,16 +111,62 @@ button .all-button {
   display: inline-block;
   padding: 0 0.5rem;
 }
-
 .fwb a {
   font-weight: 700;
-  color: #1f2041;
+  color: rgba(31, 32, 65, 1);
+}
+h1 {
+  font-weight: 700;
+  color: rgba(31, 32, 65, 1);
+  font-size: 24px;
+  line-height: 32px;
+}
+h2 {
+  font-weight: 700;
+  color: rgba(31, 32, 65, 1);
+  font-size: 16px;
+}
+h3 {
+  font-weight: 700;
+  color: rgba(31, 32, 65, 1);
+  text-transform: uppercase;
+}
+button {
+  border-radius: 22px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 3px;
+  background: linear-gradient(to top, rgb(140, 164, 250) 0%, #bc9cff 50%);
+}
+button div {
+  font-size: 12px;
+}
+button:active {
+  background: linear-gradient(
+    to top,
+    rgba(140, 164, 250, 0.7) 0%,
+    #bc9cffc1 50%
+  );
+}
+.log-button {
+  background: #fff;
+  padding: 2px 21px;
+  color: #bc9cff;
+  border-radius: 22px;
+  /*  stroke: linear-gradient(to top, rgb(140, 164, 250) 0%, #BC9CFF 50%);
+    stroke-width: 2px; */
+}
+.all-button {
+  color: #fff;
+  padding: 2px 21px;
 }
 
 .f-container {
+  /* position: absolute;
+    bottom: 0;
+    */
   padding-top: 100px;
-  width: 100%;
-  box-shadow: 0 0 15px rgba(140, 164, 250, 0.2);
 }
 
 .footer-class {
@@ -183,11 +189,12 @@ button .all-button {
   width: 100%;
   padding: 20px 10px;
   justify-content: space-between;
+
   border-top: 1px solid rgba(87, 87, 111, 0.5);
 }
-.subs .subs__social figure {
+.subs__social figure {
   display: inline-block;
-  background: linear-gradient(to top, #8ca4fa 0%, #bc9cff 50%);
+  background: linear-gradient(to top, rgb(140, 164, 250) 0%, #bc9cff 50%);
   border-radius: 5px;
 }
 
@@ -201,12 +208,12 @@ button .all-button {
   /* border: 1px black solid; */
   position: relative;
 }
-.m-container .main-class {
+.main-class {
   padding: 50px 10px;
   /* border: 1px black solid; */
   height: 100%;
 }
-.m-container .devi {
+.devi {
   position: absolute;
   bottom: 2%;
   right: 13vw;
@@ -216,63 +223,42 @@ button .all-button {
 }
 
 .window {
-  padding: 30px 40px;
+  padding: 30px 25px;
   width: 380px;
-  height: 374px;
+  height: 400px;
   background: #fff;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
-.window .window__date {
+.window__date {
   display: inline-flex;
   width: 100%;
 }
-.window .window__date .window__date__inc {
-  flex-basis: 48%;
+.window__date__inc {
+  flex-basis: 50%;
 }
-.window .window__date .window__date__out {
-  flex-basis: 48%;
+.window__date__out {
+  flex-basis: 50%;
 }
-.window .window__guests {
+.window__guests {
   flex-basis: 100%;
 }
-.window .arrow-button::after {
-  content: url(/img/ic/arrow_forward.svg);
-  position: absolute;
-  right: 5%;
-}
-.window .drop_date {
-  width: fit-content;
-  padding: 7px;
-  border: 1px solid rgba(87, 87, 111, 0.5);
-  border-radius: 4px;
-}
-.window .drop_date input {
-  text-transform: uppercase;
-}
-
 .get-number {
   flex-basis: 100%;
   position: relative;
 }
-
-h1 {
-  font-weight: 700;
-  color: #1f2041;
-  font-size: 24px;
-  line-height: 32px;
+.arrow-button::after {
+  content: url(/img/ic/facebook.svg);
+  position: absolute;
+  right: 5%;
 }
-
-h2 {
-  font-weight: 700;
-  color: #1f2041;
-  font-size: 16px;
+.drop_date {
+  width: fit-content;
+  padding: 7px;
+  border: 1px solid rgba(87, 87, 111, 0.5);
 }
-
-h3 {
-  font-weight: 700;
-  color: #1f2041;
+.drop_date input {
   text-transform: uppercase;
 }
